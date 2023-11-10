@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #220984;
+}
+
+p {
+    color: white;
+    font-size: 10px;
+}
+
+button {
+    outline: none;
+    background-color: azure;
+    color: #220984;
+    font-size: 10px;
+}
+
+.main-container{
+    padding: 10px;
+    
+}
