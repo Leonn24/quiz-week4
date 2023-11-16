@@ -21,8 +21,8 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score
 ```
-![Startquiz](./assets/images/Startquiz.png)
-![Questions](./assets/images/questions.png)
+![Quiz](./assets/images/Startquiz.png)
+![Question](./assets/images/questions.png)
 ![Highscore](./assets/images/alldone.png)
 ![Scores](./assets/images/scores.png)
 
