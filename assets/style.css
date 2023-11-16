@@ -1,3 +1,5 @@
+
+
 #wrapper {
     position: absolute;
     left: 30%;
@@ -5,6 +7,7 @@
     width: 500px;
     height: 500px;
     border: 1px solid black;
+    background-color: rgb(90, 76, 76);
 }
 
 #startQ {
@@ -15,16 +18,17 @@
     color: black;
 }
 
-#question-div{
+#questionDiv {
     margin: 20px;
 
 }
+
 #time {
     float: right;
 
 }
 
-#goback {
+#goBack {
     background-color: rgba(236, 236, 68, 0.953);
     position: relative;
     padding: 10px;
@@ -55,15 +59,19 @@ button {
 
 
 
+#Submit {
+    background-color: rgba(236, 236, 68, 0.953);
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: black;
 
-textarea {
-    width: 90%;
-    margin: 20px;
 }
 
 label {
     margin-right: 10px;
 }
+
 input {
     margin-bottom: 20px;
     width: 50%;
@@ -95,7 +103,7 @@ li {
     body {
         max-width: 786px;
     }
-}
+
 #wrapper {
     position: absolute;
     left: 35%;
@@ -108,13 +116,15 @@ a {
 }
 
 #goBack {
-    position: 
-    left 55%;
+    position: relative;
+    left: 55%;
 }
 
 #clear {
     position: relative;
     right: 5%;
+}
+
 }
 
 @media screen and (max-width: 640px) {
