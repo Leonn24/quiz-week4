@@ -20,11 +20,18 @@
 
 #questionDiv {
     margin: 20px;
+    font-size: 20px;
+    color: white;
 
+}
+
+p {
+    text-align: center;
 }
 
 #time {
     float: right;
+    color: white;
 
 }
 
@@ -88,9 +95,16 @@ li {
     margin-top: 10px;
     padding: 5px 15px;
     width: 80%;
-    font-size: 18px;
+    font-size: 25px;
     color: black;
     list-style: none;
+    border-radius: 10px;
+}
+
+li:hover {
+    background-color: bisque;
+    cursor: pointer;
+    
 }
 
 #createDiv {
