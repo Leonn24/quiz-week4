@@ -23,6 +23,7 @@ THEN I can save my initials and my score
 ```
 ![Startquiz](./assets/images/Startquiz.png)
 ![Questions](./assets/images/questions.png)
-![Highscore](./assets/images/Highscore.png)
+![Highscore](./assets/images/alldone.png)
+![Scores](./assets/images/scores.png)
 
 https://github.com/Leonn24/quiz-week4
