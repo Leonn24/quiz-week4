@@ -1,4 +1,5 @@
-//Leon's Quiz Homework Send help pls...
+// Array of quiz questions, choices, and correct answers //
+
 var questions = [{
     ques: "Commonly used data types DO NOT include:",
     choices: ["strings", "booleans", "alerts", "numbers"],
@@ -23,21 +24,23 @@ var questions = [{
 
 ];
 
+// Initialize variables for score, question index, and timer // 
+
 var score = 0;
 var questionList = 0;
+var secondsLeft = 76;
+var holdInterval = 0;
+var penalty = 10;
 
+// DOM elements
 var time = document.querySelector("#time");
 var sTimer = document.querySelector("#startQ");
 var questionDiv = document.querySelector("#questionDiv");
 var wrapper = document.querySelector("#wrapper");
-
-var secondsLeft = 76;
-var holdInterval = 0;
-var penalty = 10;
 var createUl = document.createElement("ul");
 
 
-
+// Event listener for the "Start Quiz" button //
 sTimer.addEventListener("click", function () {
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
@@ -55,7 +58,7 @@ sTimer.addEventListener("click", function () {
 });
 
 
-// Should render questions to the page
+// Function to render questions and choices to the page // 
 function render(questionList) {
     questionDiv.innerHTML = "";
     createUl.innerHTML = "";
@@ -65,6 +68,7 @@ function render(questionList) {
         questionDiv.textContent = userQuestion;
     }
 
+     // Create <li> elements for each choice and attach event listeners //
     userChoices.forEach(function (newItem) {
         var listItem = document.createElement("li");
         listItem.textContent = newItem;
@@ -75,7 +79,8 @@ function render(questionList) {
 
 }
 
-// Took a break here [todo = will need a function to compare answer to choices I think?]
+
+// Function to compare user's choice with the correct answer //
 
 function compare(event) {
     var element = event.target;
@@ -109,7 +114,7 @@ function compare(event) {
 }
 
 
-// Break [Note to self: need to append last page for labels, initials, Submit,]
+
 var createLabel = document.createElement("label");
 createLabel.setAttribute("id", "createLabel");
 createLabel.textContent = "Enter your Initals ";
@@ -128,6 +133,8 @@ createSubmit.setAttribute("type", "submit");
 createSubmit.setAttribute("id", "Submit");
 createSubmit.textContent = "Submit";
 
+
+// Function to display the final page with user's score and input for initials //
 function allDone() {
     questionDiv.innerHTML = "";
     time.innerHTML = "";
@@ -151,7 +158,7 @@ function allDone() {
 
 }
 
-
+// Initialize variables for the countdown timer on the final page //
 var startTime = 76;
 var currentTime = startTime;
 
@@ -159,6 +166,7 @@ function updateTimer() {
     currentTime--;
 }
 
+// Event listener for the "Submit" button on the final page // 
 
 createSubmit.addEventListener("click", function () {
     var initials = createInput.value.trim();
